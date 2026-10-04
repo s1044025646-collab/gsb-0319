@@ -1,0 +1,19 @@
+{
+  "name": "debruijn-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "de Bruijn 循环序列生成与窗口覆盖核验后端 (TypeScript + Node.js + SQLite)",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/debruijn.test.js",
+    "start": "npm run build && node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "npm run build && node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
+
